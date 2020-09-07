@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Header -->
+
+    <div class="header">
+        <div class="container">
+            <div class="nome">
+                <h3>Pro Eagle</h3>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <a href="Home.html"><li>Início</li></a>
+                    <a href="#"><li>Sobre</li></a>
+                    <a href="#"><li>Orçamento</li></a>
+                    <a href="#"><li>Contato</li></a>
+                    <a href="#"><li>Equipe</li></a>
+                    <a href="#"><li>Produto</li></a>
+                </ul>
+            <div class="icones">
+                <i class="far fa-user"></i>
+            </div>    
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Fundo -->
+
+    <div class="fundo">
+        <img class="mySlides" src="https://static.vecteezy.com/system/resources/previews/000/681/458/non_2x/black-and-dark-red-angled-cut-paper-effect-background.jpg">
+        <img class="mySlides" src="https://c.pxhere.com/photos/4e/af/environment_fog_forest_nature_outdoors_sunlight_trees_woods-1498319.jpg!d">
+        <img class="mySlides" src="https://conteudo.imguol.com.br/c/noticias/2b/2019/07/29/26ago2017---imagem-de-drone-mostra-ativistas-e-grupos-de-protecao-ambiental-marchando-em-protesto-na-floresta-de-hambach-oeste-da-alemanha-1564429105550_v2_1920x1080.jpg">
+        <img class="mySlides" src="https://i.pinimg.com/originals/4a/c1/ea/4ac1ea02bb349c95be5fa86e6339d992.jpg">
+
+        <div class="btnSlide">
+            <button class="btnEsquerdo" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="btnDireito" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Conteúdo -->
+
+    <div class="conteudo">
+        <div class="texto">
+        <p>2020</p>
+        <h1>Pro Eagle 2020</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius rerum tempore harum vero non
+        dignissimos ea commodi, atque iusto odio explicabo eveniet magnam dolores blanditiis? Beatae 
+        molestias a aspernatur recusandae?
+        </p>
+        </div>
+
+        <div class="btnExplorar">
+            <button>Explore</button>
+        </div>
+    </div>
+
+    <!-- Redes sociais -->
+
+    <div class="redes">
+        <ul>
+            <a href="#">
+                <li><i class="fab fa-facebook-f"></i></li>
+            </a>
+            <a href="#">
+                <li><p>Facebook</p></li>
+            </a>
+            <a href="#">
+                <li><i class="fab fa-instagram"></i></li>
+            </a>
+            <a href="#">
+                <li><p>Instagram</p></li>
+            </a>
+        </ul>
+    </div>
+
+</body>
+</html>
+<script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>

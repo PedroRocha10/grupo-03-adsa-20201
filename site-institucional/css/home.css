@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+a{
+    text-decoration: none;
+}
+.header{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.01));
+}
+.header .container{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.header .nome{
+    float: left;
+    height: 100%;
+    width: 200px;
+    display: inline-flex;
+}
+.header .nome h3{
+    position: relative;
+    padding-left: 28px;
+    color: white;
+}
+.header .nav{
+    float: right;
+    position: relative;
+    bottom: 3px;
+    height: 100%;
+    width:600px;
+    overflow: hidden;
+}
+.header .nav ul{
+    float: left;
+    margin-left: -30px;
+    width: 500px;
+}
+.header .nav li{
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    transition: 0.3s;
+}
+.header .nav li:hover{
+    color: rgb(255, 81, 81);
+    transition: 0.5s;
+}
+.header .icones{
+    float: right;
+    position: relative;
+    width: 71px;
+    height: 100%;
+}
+.header .icones i{
+    position: relative;
+    left: 18px;
+    top: 23px;
+    color: white;
+    font-size: 18px;
+    transition: 0.8s;
+}
+.header .icones i:hover{
+    color: rgb(255, 81, 81);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* Fundo */
+
+.fundo{
+    width: 100%;
+    height: 100vh;
+    background: url(https://pbs.twimg.com/media/Ea6KvOzX0AEnbJk?format=jpg&name=900x900);
+}
+.mySlides{
+    width: 100%;
+    height: 100%;
+}
+.fundo .btnSlide{
+    position: absolute;
+    bottom: 25px;
+    right: 40px;
+}
+.fundo .btnSlide button{
+    border-radius: 50%;
+    border: none;
+    font-size: 15px;
+    background-color: rgb(255, 81, 81);
+    color: white;
+    height: 50px;
+    width: 50px;
+    transition: 0.4s;
+}
+.fundo .btnSlide button:hover{
+    background-color: rgb(192, 192, 192);
+    transition: 0.5s;
+    cursor: pointer;    
+}
+.fundo .btnSlide .btnEsquerdo{
+    position: relative;
+    right: 10px;
+}
+
+/* Conteúdo */
+
+.conteudo{
+    position: absolute;
+    top: 120px;
+    left: 230px;
+    height: auto;
+    width: 600px;
+    padding-bottom: 1.5em;
+    color: white;
+}
+.conteudo .texto{
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.conteudo .texto h1{
+    color: rgb(255, 81, 81);
+    font-size: 3em;
+}
+.conteudo .btnExplorar{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.conteudo .btnExplorar button{
+    margin-left: 460px;
+    border: none;
+    background-color: rgb(255, 81, 81);
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+.conteudo .btnExplorar button:hover{
+    background-color: rgb(192, 192, 192);
+    transition: 0.5s;
+    cursor: pointer; 
+}
+
+/* Redes sociais */
+
+.redes{
+    position: absolute;
+    bottom: 0;
+    left: 210px;
+    width: 300px;
+    height: 100px;
+    display: inline-flex;
+}
+.redes ul{
+    position: relative;
+}
+.redes ul li{
+    text-decoration-style: none;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+}
+.redes ul li:hover{
+    color: rgb(255, 81, 81);
+    transition: 0.5s;
+}
+.redes i{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    transition: 0.8s;
+}
