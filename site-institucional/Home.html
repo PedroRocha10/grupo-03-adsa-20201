@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/contato.css">
+    <link rel="stylesheet" href="CSS/sobre.css">
+    <link rel="stylesheet" href="CSS/equipe.css">
+    <link rel="stylesheet" href="CSS/orcamento.css">
+    <link rel="stylesheet" href="CSS/produto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
@@ -20,12 +25,12 @@
 
             <div class="nav">
                 <ul>
-                    <a href="Home.html"><li>Início</li></a>
-                    <a href="#"><li>Sobre</li></a>
-                    <a href="#"><li>Orçamento</li></a>
-                    <a href="#"><li>Contato</li></a>
-                    <a href="#"><li>Equipe</li></a>
-                    <a href="#"><li>Produto</li></a>
+                    <a href="#home"><li>Início</li></a>
+                    <a href="#sobre"><li>Sobre</li></a>
+                    <a href="#orcamento"><li>Orçamento</li></a>
+                    <a href="#equipe"><li>Equipe</li></a>
+                    <a href="#produto"><li>Produto</li></a>
+                    <a href="#contato"><li>Contato</li></a>
                 </ul>
             <div class="icones">
                 <i class="far fa-user"></i>
@@ -37,7 +42,7 @@
 
     <!-- Fundo -->
 
-    <div class="fundo">
+    <div class="fundo"  id="home">
         <img class="mySlides" src="https://static.vecteezy.com/system/resources/previews/000/681/458/non_2x/black-and-dark-red-angled-cut-paper-effect-background.jpg">
         <img class="mySlides" src="https://c.pxhere.com/photos/4e/af/environment_fog_forest_nature_outdoors_sunlight_trees_woods-1498319.jpg!d">
         <img class="mySlides" src="https://conteudo.imguol.com.br/c/noticias/2b/2019/07/29/26ago2017---imagem-de-drone-mostra-ativistas-e-grupos-de-protecao-ambiental-marchando-em-protesto-na-floresta-de-hambach-oeste-da-alemanha-1564429105550_v2_1920x1080.jpg">
@@ -54,7 +59,7 @@
     <div class="conteudo">
         <div class="texto">
         <p>2020</p>
-        <h1>Pro Eagle 2020</h1>
+        <h1 class="title">Pro Eagle 2020</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius rerum tempore harum vero non
         dignissimos ea commodi, atque iusto odio explicabo eveniet magnam dolores blanditiis? Beatae 
         molestias a aspernatur recusandae?
@@ -85,8 +90,67 @@
         </ul>
     </div>
 
+    <div class="aboutUs" id="sobre">
+
+    </div>
+
+    <div class="money" id="orcamento">
+        
+    </div>
+
+    <div class="team" id="equipe">
+        
+    </div>
+
+    <div class="product" id="produto">
+        
+    </div>
+
+    <div class="contactUs" id="contato">
+        <div class="container">
+            <div class="mask">
+                <h1 class="title_contact">Contato</h1>
+            </div>    
+        </div>
+    </div>
+
+    <div class="contact">
+
+        <h4>FORM FEEDBACK</h4>
+
+        <form action="https://api.staticforms.xyz/submit" method="POST">
+            <input type="hidden" name="accessKey" value="471edd95-409b-4445-ae11-e860998eb669">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/contato.html">
+
+            <input type="text" class="inp-form" placeholder="Nome" name="name" required><br><br>
+            <input type="email" class="inp-form" placeholder="Email" id="email" name="email" required><br><br>
+            <input type="text" class="inp-form" name="subject" placeholder="Assunto" required><br><br>
+            <input type="text" class="inp-form" placeholder="Celular" name="phone" required><br><br>
+            <textarea cols="43" rows="5" placeholder="Mensagem..." name="message" required></textarea><br><br>
+            <button class="btn-envio">Enviar</button>
+
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="adres">
+               <h5>Nosso Endereço</h5><br>
+               <h4>123456 - Seattle<br>
+                Pioneer Square<br>
+                47 - escritório 202</h4> 
+            </div>
+            <div class="contacts">
+                <h5>Nossos contatos</h5><br>
+                <h4>proeagle@gmail.com<br>+55 11 9999-9999</h4> 
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
+
+
 <script>
     var slideIndex = 1;
 showDivs(slideIndex);

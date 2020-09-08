@@ -5,6 +5,10 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Header */
 a{
     text-decoration: none;
@@ -30,14 +34,16 @@ a{
 .header .nome h3{
     position: relative;
     padding-left: 28px;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 .header .nav{
+    font-family: 'Montserrat', sans-serif;
     float: right;
     position: relative;
     bottom: 3px;
     height: 100%;
-    width:600px;
+    width: 600px;
     overflow: hidden;
 }
 .header .nav ul{
@@ -123,6 +129,7 @@ a{
     color: white;
 }
 .conteudo .texto{
+    font-family: 'Montserrat', sans-serif;
     text-align: justify;
     padding-left: 20px;
     padding-right: 20px;
