@@ -18,3 +18,38 @@ body{
     background-color: #500000;
     color: #fff;
 }
+
+.corpo{
+    display: block;
+    margin-top: 100px;
+}
+
+.imagem-produto img{
+    width: 20%;
+    height:330px;
+    float: left;
+    margin-left: 30px;  
+    margin-top: 40px;
+}
+
+.texto-cima{
+    width: 30%;
+    float: right;
+    margin-right: 70px;
+    text-align: center;
+}
+.texto-baixo{
+    float: left;
+    width: 70%;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 70px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
