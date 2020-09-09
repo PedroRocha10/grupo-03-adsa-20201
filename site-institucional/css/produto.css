@@ -44,11 +44,11 @@ body{
     text-align: center;
     margin-left: 70px;
 }
-h3{
+.produto h3{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
-p{
+.produto p{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
