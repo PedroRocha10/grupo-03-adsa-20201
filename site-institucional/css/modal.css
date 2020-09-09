@@ -131,10 +131,11 @@
 
 .cadastro-sucesso {
     display: none;
-    color: #c59721;
+    color: #0b12e8;
 }
 
 .frase-cadastre {
+    font-weight: lighter;
     font-size: 14px;
     color: #525252;
 }

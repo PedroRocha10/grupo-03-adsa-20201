@@ -9,7 +9,7 @@ let validado_nome = false;
 let validado_email = false;
 let validado_senha = false;
 let validado_conf_senha = false;
-let validado_cpf = false;
+let validado_cnpj = false;
 let validado_tel = false;
 
 
@@ -76,22 +76,22 @@ function validacao_senha() {
     }
 }
 
-function validarCPF() {
-    let cpf = input_cpf_cad.value.trim();
-    let msg = document.getElementById('mensagem_cpf');
+function validarCNPJ() {
+    let cnpj = input_cnpj_cad.value.trim();
+    let msg = document.getElementById('mensagem_cnpj');
 
     msg.innerHTML = '';
 
-    if (cpf) {
-        for (let i = 0; i <= cpf.length - 1; i++) {
+    if (cnpj) {
+        for (let i = 0; i <= cnpj.length - 1; i++) {
 
-            if (cpf.length == 14) {
-                msg.innerHTML = 'CPF OK!'
+            if (cnpj.length == 18) {
+                msg.innerHTML = 'CNPJ OK!'
                 msg.style.color = '#008000';
-                validado_cpf = true;
+                validado_cnpj = true;
             }
             else {
-                msg.innerHTML = 'Digite seu CPF'
+                msg.innerHTML = 'Digite o CNPJ de sua empresa'
                 msg.style.color = '#0078d7';
             }
         }
@@ -142,7 +142,7 @@ function cadastrar(event) {
 
     // validação final dos dados
 
-    if (validado_nome == false || valida_email == false || validado_senha == false || validado_conf_senha == false || validado_cpf == false || validado_tel == false) {
+    if (validado_nome == false || valida_email == false || validado_senha == false || validado_conf_senha == false || validado_cnpj == false || validado_tel == false) {
 
         mensagem_erro.innerHTML = 'Por favor, preencha os campos corretamente conforme orientações';
 
