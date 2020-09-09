@@ -1,0 +1,151 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 50;
+    display: none;
+}
+
+.modal-container.mostrar {
+    display: flex;
+}
+
+.modal {
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    width: 21%;
+    padding: 4%;
+    border: 7px double #0b12e8a5;
+    box-shadow: 0 0 0 12px #0b12e8a5;
+    border-radius: 8px;
+    position: relative;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    } /*mudar a posição do elemento em -60px, animando e voltando para o 0px*/
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.mostrar .modal {
+    animation: modal 0.3s; /*duração da animação*/
+}
+
+.modal.register {
+    width: 23%;
+    padding: 3% 4%;
+}
+
+.titulo-modal {
+    font-size: 20px;
+    padding-bottom: 8%;
+}
+.modal span {
+    display: inline-block;
+    font-size: 12px;
+    padding: 7px;
+    padding-bottom: 15px;
+    color: #525252;
+}
+
+.fechar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-top: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 35px;
+    color: #c8c8c8;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+
+.fechar:hover {
+    color: #da3620;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(70, 70, 70);
+}
+
+.input:focus {
+    border-bottom: 1px solid #8623cc;
+    transition: 0.5s;
+}
+
+.enter {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    text-align: center;
+    background-color: #0b12e8;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enter:hover {
+    background-color: rgb(14, 0, 169);
+}
+
+
+.error {
+    background-color: #FFE4E1;
+    color: #B22222;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.cadastro-sucesso {
+    display: none;
+    color: #c59721;
+}
+
+.frase-cadastre {
+    font-size: 14px;
+    color: #525252;
+}
+
+.msg-input {
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+}
+
+#cadastroAcesso {
+    cursor: pointer;
+    color: hsl(218, 100%, 59%);
+}

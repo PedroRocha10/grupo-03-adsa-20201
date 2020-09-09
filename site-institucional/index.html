@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pro Eagle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="CSS/home.css">
     <link rel="stylesheet" href="CSS/contato.css">
@@ -11,6 +13,7 @@
     <link rel="stylesheet" href="CSS/equipe.css">
     <link rel="stylesheet" href="CSS/orcamento.css">
     <link rel="stylesheet" href="CSS/produto.css">
+    <link rel="stylesheet" href="CSS/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="shortcut icon" href="../site-institucional/img/passaro.png" type="imagem/x-icon">
 
@@ -34,7 +37,7 @@
                     <a href="#produto"><li>Produto</li></a>
                     <a href="#contato"><li>Contato</li></a>
                 </ul>
-            <div class="icones">
+            <div class="icones" id="loginAcesso">
                 <i class="far fa-user"></i>
             </div>    
             </div>
@@ -198,7 +201,7 @@
 
         <form action="https://api.staticforms.xyz/submit" method="POST">
             <input type="hidden" name="accessKey" value="471edd95-409b-4445-ae11-e860998eb669">
-            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/contato.html">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Home.html">
 
             <input type="text" class="inp-form" placeholder="Nome" name="name" required><br><br>
             <input type="email" class="inp-form" placeholder="Email" id="email" name="email" required><br><br>
@@ -224,6 +227,73 @@
             </div>
         </div>
     </footer>
+
+    <!-- MODAL LOGIN-->
+    <div id="modal-login" class="modal-container flex">
+        <div class="modal">
+            <button class="fechar">&times;</button>
+            <h2 class="titulo-modal">Login</h2>
+            <form id="formulario_login">
+
+                <div id="mensagem_erro_login" class="error"></div>
+
+                <input type="email" class="input" placeholder="E-mail" id="login_email">
+                <div class="border-input"></div>
+
+                <input type="password" class="input" placeholder="Senha" id="login_senha">
+                <div class="border-input"></div>
+
+
+                <button type="submit" class="enter">ENTRAR</button>
+
+                <frase class="frase-cadastre">Ainda não possui cadastro? <b id="cadastroAcesso">Cadastre-se aqui</b></frase>
+            </form>
+        </div>
+    </div>
+
+    <!--MODAL CADASTRO-->
+    <div id="modal-cadastro" class="modal-container flex">
+
+        <div class="modal register">
+            <button class="fechar">&times;</button>
+
+            <form id='formulario_cad'>
+                <h2 class="titulo-modal">Cadastre-se</h2>
+
+                <div id="mensagem_erro" class="error"></div>
+
+                <input type="text" class="input" placeholder="Seu nome" id="valida_nome" onkeyup="validacao_nome()">
+                <div id="mensagem_nome" class="msg-input"></div>
+
+                <input type="email" class="input" placeholder="Seu e-mail" id="valida_email"
+                    onkeyup="validacao_email()">
+                <div id="mensagem_email" class="msg-input"></div>
+
+                <input type="password" class="input" placeholder="Crie uma senha" id="valida_senha"
+                    onkeyup="validacao_senha()">
+                <div id="mensagem_senha" class="msg-input"></div>
+
+                <input type="password" class="input" placeholder="Confirmar senha" id="confirma_senha">
+                <div id="mensagem_senha2" class="msg-input"></div>
+
+                <input type="password" class="input" placeholder="CNPJ" id="input_cpf_cad" onkeyup="validarCPF()">
+                <div id="mensagem_cpf" class="msg-input"></div>
+
+                <input type="password" class="input" placeholder="Telefone" id="input_telefone" onkeyup="validarTel()">
+                <div id="mensagem_tel" class="msg-input"></div>
+
+
+                <button type="submit" class="enter">CADASTRAR-SE</button>
+            </form>
+
+            <div class="cadastro-sucesso" id="sucesso">
+                <h2>Cadastrado com sucesso! Agora é só fazer login e usufruir da arte :)</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/modal.js"></script>
+    <script src="js/validacao.js"></script>
 
 </body>
 </html>
