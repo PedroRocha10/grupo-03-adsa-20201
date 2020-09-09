@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="CSS/produto.css">
     <link rel="stylesheet" href="CSS/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="shortcut icon" href="../site-institucional/img/passaro.png" type="imagem/x-icon">
+    <link rel="shortcut icon" href="../img/passaro.png" type="imagem/x-icon">
 
 </head>
 <body>
@@ -110,7 +110,7 @@
             <div class="ideais">
             <div class="cx-ideal">
                 <div class="fundoimagem">
-                <img src="../site-institucional/img/musculos.png" alt="">
+                <img src="../img/musculos.png" alt="">
             </div>
                 <p>
                     <h3>Missão</h3>
@@ -122,7 +122,7 @@
             </div>
             <div class="cx-ideal">
                 <div class="fundoimagem">
-                    <img src="../site-institucional/img/foguete.png" alt="">
+                    <img src="../img/foguete.png" alt="">
                 </div>
                 <p>
                     <h3>Visão</h3>
@@ -132,7 +132,7 @@
             </div>
             <div class="cx-ideal">
                 <div class="fundoimagem">
-                    <img src="../site-institucional/img/qualidade.png" alt="">
+                    <img src="../img/qualidade.png" alt="">
                 </div>
                 <p>
                     <h3>Valores</h3>
@@ -187,31 +187,34 @@
         
     </div>
 
+    <!-- PG Contato -->
+
     <div class="contactUs" id="contato">
-        <div class="container">
-            <div class="mask">
+
+        <div class="contact">
+
+            <h4>FORM FEEDBACK</h4>
+    
+            <form action="https://api.staticforms.xyz/submit" method="POST">
+                <input type="hidden" name="accessKey" value="471edd95-409b-4445-ae11-e860998eb669">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+    
+                <input type="text" class="inp-form" placeholder="Nome" name="name" required><br><br>
+                <input type="email" class="inp-form" placeholder="Email" id="email" name="email" required><br><br>
+                <input type="text" class="inp-form" name="subject" placeholder="Assunto" required><br><br>
+                <input type="text" class="inp-form" placeholder="Celular" name="phone" required><br><br>
+                <textarea rows="5" placeholder="Mensagem..." name="message" required></textarea><br><br>
+                <button class="btn-envio">Enviar</button>
+    
+            </form>
+        </div>
+        <div class="mask">
+            <div class="container">
                 <h1 class="title_contact">Contato</h1>
             </div>    
         </div>
     </div>
 
-    <div class="contact">
-
-        <h4>FORM FEEDBACK</h4>
-
-        <form action="https://api.staticforms.xyz/submit" method="POST">
-            <input type="hidden" name="accessKey" value="471edd95-409b-4445-ae11-e860998eb669">
-            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Home.html">
-
-            <input type="text" class="inp-form" placeholder="Nome" name="name" required><br><br>
-            <input type="email" class="inp-form" placeholder="Email" id="email" name="email" required><br><br>
-            <input type="text" class="inp-form" name="subject" placeholder="Assunto" required><br><br>
-            <input type="text" class="inp-form" placeholder="Celular" name="phone" required><br><br>
-            <textarea cols="43" rows="5" placeholder="Mensagem..." name="message" required></textarea><br><br>
-            <button class="btn-envio">Enviar</button>
-
-        </form>
-    </div>
 
     <footer>
         <div class="container">
