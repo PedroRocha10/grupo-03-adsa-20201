@@ -14,10 +14,7 @@ body{
     height: 100vh;
     width: 100%;
     float: left;
-    background-color: black;
-    /**background-image: url(https://static.vecteezy.com/system/resources/previews/000/681/458/non_2x/black-and-dark-red-angled-cut-paper-effect-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;**/
+    background-color: #1E90FF;
     color: #fff;
 }
 
@@ -42,7 +39,7 @@ body{
 }
 
 .fundoimagem{
-    background-color: #FF5151;
+    background-color: #0086FA;
     height: 85px;
     width: 85px;
     float: left;
@@ -57,7 +54,7 @@ body{
 }
 
 .ideais h3{
-    color: #FF5151;
+    color: #0086FA;
     font-size: 20px;
     margin-bottom: 5px;
 }
