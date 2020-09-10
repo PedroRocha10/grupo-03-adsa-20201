@@ -32,18 +32,27 @@
 }
 
 @keyframes modal {
-    from {
+    0% {
         opacity: 0;
         transform: translate3d(0, -60px, 0);
     } /*mudar a posição do elemento em -60px, animando e voltando para o 0px*/
-    to {
+    40% {
         opacity: 1;
         transform: translate3d(0,0,0);
+    }
+    50%{
+        transform: translate(-5%, 0);
+    }
+    75%{
+        transform: translate(5%, 0);
+    }
+    100%{
+        transform: translate(0, 0);
     }
 }
 
 .mostrar .modal {
-    animation: modal 0.3s; /*duração da animação*/
+    animation: modal .5s; /*duração da animação*/
 }
 
 .modal.register {
