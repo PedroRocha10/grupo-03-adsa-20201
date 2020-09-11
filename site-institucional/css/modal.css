@@ -29,25 +29,17 @@
     box-shadow: 0 0 0 12px #0b12e8a5;
     border-radius: 8px;
     position: relative;
+    transition: all 0.5s;
 }
 
 @keyframes modal {
-    0% {
+    from {
         opacity: 0;
         transform: translate3d(0, -60px, 0);
     } /*mudar a posição do elemento em -60px, animando e voltando para o 0px*/
-    40% {
+    to {
         opacity: 1;
         transform: translate3d(0,0,0);
-    }
-    50%{
-        transform: translate(-5%, 0);
-    }
-    75%{
-        transform: translate(5%, 0);
-    }
-    100%{
-        transform: translate(0, 0);
     }
 }
 
@@ -158,4 +150,25 @@
 #cadastroAcesso {
     cursor: pointer;
     color: hsl(218, 100%, 59%);
+}
+
+@keyframes errorAnimation {
+
+    0% {
+        transform: translate3d(0,0,0);
+    }
+    50%{
+        transform: translate(-5%, 0);
+    }
+    75%{
+        transform: translate(5%, 0);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+.anima-erro {
+    animation-name: errorAnimation;
+    animation-duration: 1s;
 }

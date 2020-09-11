@@ -17,7 +17,7 @@ body{
     width: 100%;
     float: left;
     color: #fff;
-    background-color: #005;
+    background-image: url(../img/background-team.jpeg);
 }
 
 .flex {
