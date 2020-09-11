@@ -17,38 +17,59 @@ body{
     background-image: url(../img/fundo-product.png);
     color: white;
 }
-
-.corpo{
-    display: block;
-    margin-top: 100px;
-}
-
-.imagem-produto img{
-    width: 20%;
-    height:330px;
-    float: left;
-    margin-left: 30px;  
-    margin-top: 40px;
-}
-
-.texto-cima{
-    width: 30%;
-    float: right;
-    margin-right: 70px;
+.product h3{
     text-align: center;
+    margin: 5%;
 }
-.texto-baixo{
+#container{
+    width: 850px;
+    height: 400px;
+    margin: 3% auto;
+  
+}
+.principal{
+    width: 850px;
+    height: 350px;
+    overflow: hidden;
+}
+.slide{
+    display: flex;
+    width: 400%;
+    transition: all 0.8s;
+}
+.slide img{
+   width: 850px;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+   
+}
+ #container label img{
+    height: 80px;
+    width: 212px;
+    cursor: pointer;
     float: left;
-    width: 70%;
-    margin-top: 50px;
-    text-align: center;
-    margin-left: 70px;
+    opacity: 0.3;
+    transition: all 0.4s;
+    object-fit: cover;
+    object-position: top;
 }
-.produto h3{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+
+#foto2:checked ~ .principal .slide{
+    margin-left: -100%;
+
 }
-.produto p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+#foto3:checked ~ .principal .slide{
+    margin-left: -200%;
+
+}
+#foto4:checked ~ .principal .slide{
+    margin-left: -300%;
+
+}
+input[name="grupo"]{
+    display: none;
+}
+input[name="grupo"]:checked + label img{
+    opacity: 0.9;
 }
