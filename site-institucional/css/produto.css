@@ -36,12 +36,14 @@ body{
     display: flex;
     width: 400%;
     transition: all 0.8s;
+    
 }
 .slide img{
    width: 850px;
     height: 350px;
     object-fit: cover;
     object-position: top;
+    
    
 }
  #container label img{
@@ -49,7 +51,7 @@ body{
     width: 212px;
     cursor: pointer;
     float: left;
-    opacity: 0.3;
+    opacity: 0.4;
     transition: all 0.4s;
     object-fit: cover;
     object-position: top;
@@ -71,5 +73,6 @@ input[name="grupo"]{
     display: none;
 }
 input[name="grupo"]:checked + label img{
+    display: block;
     opacity: 0.9;
 }
