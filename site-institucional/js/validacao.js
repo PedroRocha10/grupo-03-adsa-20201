@@ -145,6 +145,7 @@ function cadastrar(event) {
     if (validado_nome == false || valida_email == false || validado_senha == false || validado_conf_senha == false || validado_cnpj == false || validado_tel == false) {
 
         mensagem_erro.innerHTML = 'Por favor, preencha os campos corretamente conforme orientações';
+        modalCad.classList.add("anima-erro");
 
     } else {
 

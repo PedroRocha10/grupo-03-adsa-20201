@@ -14,8 +14,8 @@ body{
     height: 100vh;
     width: 100%;
     float: left;
-    background-color: #1E90FF;
-    color: #fff;
+    background-image: url(../img/fundo-about.jpeg);
+    color: rgb(57, 57, 57);
 }
 
 
