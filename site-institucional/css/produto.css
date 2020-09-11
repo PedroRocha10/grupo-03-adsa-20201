@@ -21,7 +21,7 @@ body{
     text-align: center;
     margin: 5%;
 }
-#container{
+.container-slide{
     width: 850px;
     height: 400px;
     margin: 3% auto;
@@ -46,7 +46,7 @@ body{
     
    
 }
- #container label img{
+    .container-slide label img{
     height: 80px;
     width: 212px;
     cursor: pointer;
@@ -73,6 +73,5 @@ input[name="grupo"]{
     display: none;
 }
 input[name="grupo"]:checked + label img{
-    display: block;
-    opacity: 0.9;
+   opacity: 0.9;
 }
