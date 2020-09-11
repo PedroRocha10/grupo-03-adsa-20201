@@ -145,9 +145,15 @@ function cadastrar(event) {
     if (validado_nome == false || valida_email == false || validado_senha == false || validado_conf_senha == false || validado_cnpj == false || validado_tel == false) {
 
         mensagem_erro.innerHTML = 'Por favor, preencha os campos corretamente conforme orientações';
-        modalCad.classList.add("anima-erro");
 
-        document.getElementById("modal-cadastro").className = "modal-container";
+        document.getElementById("modalCad").animate([
+            { transform: 'translateX(0px)'},
+            { transform: 'translateX(-20px)'},
+            { transform: 'translateX(20px)'},
+            { transform: 'translateX(0px)'},
+        ],{
+            duration: 150,
+        })
 
     } else {
 
