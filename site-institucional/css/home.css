@@ -57,11 +57,16 @@ a{
     padding: 8px;
     color: white;
     transition: 0.3s;
+    text-shadow: 5px 3px 8px black;
 }
 .header .nav li:hover{
     color: #60b5ff;
     transform: scale(0.9);
     transition: 0.5s;
+}
+.header .nav li:active{
+    transform: scale(1.3);
+    color: rgb(95, 27, 255);
 }
 .header .icones{
     float: right;
