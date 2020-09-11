@@ -22,14 +22,14 @@ body{
     margin: 5%;
 }
 .container-slide{
-    width: 850px;
-    height: 400px;
+    width: 80vw;
+    height: 53vh;
     margin: 3% auto;
   
 }
 .principal{
-    width: 850px;
-    height: 350px;
+    width: 80vw;
+    height: 53vh;
     overflow: hidden;
 }
 .slide{
@@ -39,16 +39,16 @@ body{
     
 }
 .slide img{
-   width: 850px;
-    height: 350px;
+    width: 80vw;
+    height: 53vh;
     object-fit: cover;
     object-position: top;
     
    
 }
     .container-slide label img{
-    height: 80px;
-    width: 212px;
+    height: 14vh;
+    width: 20vw;
     cursor: pointer;
     float: left;
     opacity: 0.4;

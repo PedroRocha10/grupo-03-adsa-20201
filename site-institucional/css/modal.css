@@ -25,8 +25,8 @@
     background-color: #fff;
     width: 21%;
     padding: 4%;
-    border: 7px double #0b12e8a5;
-    box-shadow: 0 0 0 12px #0b12e8a5;
+    border: 7px double #1d52fea5;
+    box-shadow: 0 0 0 12px #1d52fea5;
     border-radius: 8px;
     position: relative;
     transition: all 0.5s;
@@ -107,7 +107,7 @@
     padding: 10px;
     margin: 15px 0;
     text-align: center;
-    background-color: #0b12e8;
+    background-color: #1d52fe;
     color: #fff;
     border: none;
     border-radius: 6px;
