@@ -146,6 +146,8 @@ function cadastrar(event) {
 
         mensagem_erro.innerHTML = 'Por favor, preencha os campos corretamente conforme orientações';
 
+        document.getElementById("modal-cadastro").className = "modal-container";
+
     } else {
 
         // mensagem para o usuário
