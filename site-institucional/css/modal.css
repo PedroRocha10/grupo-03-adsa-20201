@@ -118,7 +118,8 @@
 }
 
 .enter:hover {
-    background-color: rgb(14, 0, 169);
+    background-color: #00539b;;
+    transform: scale(0.9);
 }
 
 

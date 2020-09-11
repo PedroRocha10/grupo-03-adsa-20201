@@ -87,9 +87,15 @@ textarea:focus{
     outline: none;
     float: right;
     font-family: monospace;
-    background: #0b12e8;
+    background: #0086fa;
     border-radius: 6px;
     color: #fff;
+    transition: all 0.5s;
+}
+
+.btn-envio:hover {
+    background-color: #00539b;;
+    transform: scale(0.9);
 }
 
 .btn-envio:active{

@@ -141,7 +141,7 @@ a{
     height: auto;
     width: 600px;
     padding-bottom: 1.5em;
-    color: rgb(53, 53, 53);
+    color: #444444;
 }
 .conteudo .texto{
     font-family: 'Montserrat', sans-serif;
@@ -160,11 +160,12 @@ a{
     float: right;
     border: none;
     background-color: #0086fa;
-    width: 100px;
+    border-radius: 6px;
+    width: 120px;
     height: 40px;
     color: white;
     font-weight: bolder;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .conteudo .btnExplorar button:hover{
     background-color: #00539b;
