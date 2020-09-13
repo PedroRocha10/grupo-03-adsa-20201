@@ -23,24 +23,25 @@ body{
 }
 
 .container-slide{
-    width: 80vw;
+    width: 75vw;
     height: 53vh;
     margin: 3% auto; 
 }
 
 .principal{
-    width: 80vw;
+    width: 75vw;
     height: 53vh;
+    position: relative;
     overflow: hidden;
 }
 .slide{
     display: flex;
-    width: 400%;
+    width: 500%;
     transition: all 0.8s;
     
 }
 .slide img{
-    width: 80vw;
+    width: 75vw;
     height: 53vh;
     object-fit: cover;
     object-position: top;
@@ -49,7 +50,7 @@ body{
 
 .container-slide label img{
     height: 14vh;
-    width: 20vw;
+    width: 15vw;
     cursor: pointer;
     float: left;
     opacity: 0.4;
@@ -62,16 +63,20 @@ body{
     object-position: center;
 }
 
-#foto2:checked ~ .principal .slide{
+#foto1:checked ~ .principal .slide{
     margin-left: -100%;
 
 }
-#foto3:checked ~ .principal .slide{
+#foto2:checked ~ .principal .slide{
     margin-left: -200%;
 
 }
-#foto4:checked ~ .principal .slide{
+#foto3:checked ~ .principal .slide{
     margin-left: -300%;
+
+}
+#foto4:checked ~ .principal .slide{
+    margin-left: -400%;
 
 }
 
@@ -80,4 +85,17 @@ input[name="grupo"]{
 }
 input[name="grupo"]:checked + label img{
    opacity: 0.9;
+}
+
+.descricao-slide {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    background-color: #41288eee;
+    text-align: center;
+}
+
+.descricao-slide p {
+    font-size: 18px;
+    font-weight: lighter;
 }
