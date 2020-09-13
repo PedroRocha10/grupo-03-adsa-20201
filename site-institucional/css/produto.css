@@ -63,19 +63,19 @@ body{
     object-position: center;
 }
 
-#foto1:checked ~ .principal .slide{
+#foto2:checked ~ .principal .slide{
     margin-left: -100%;
 
 }
-#foto2:checked ~ .principal .slide{
+#foto3:checked ~ .principal .slide{
     margin-left: -200%;
 
 }
-#foto3:checked ~ .principal .slide{
+#foto4:checked ~ .principal .slide{
     margin-left: -300%;
 
 }
-#foto4:checked ~ .principal .slide{
+#foto5:checked ~ .principal .slide{
     margin-left: -400%;
 
 }
@@ -98,4 +98,52 @@ input[name="grupo"]:checked + label img{
 .descricao-slide p {
     font-size: 18px;
     font-weight: lighter;
+}
+
+/* modal ampliação de imagens */
+
+#modal_img {
+    height: 90vh;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+
+.modal_active #modal_img {
+    transform: scale(1);
+}
+
+.modal-galeria {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000b;
+    position: fixed;
+    z-index: 50;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.8s linear, opacity 0.3s linear;
+}
+
+.modal-content {
+    height: 100vh;
+}
+
+#fechar_galeria {
+    top: 15px;
+    right: 25px;
+    color: #fff;
+    background-color: #000c;
+    border: 1px solid #fff;
+    font-size: 35px;
+    padding: 0 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#fechar_galeria:hover {
+    background-color: #daa520;
+}
+
+.modal_active {
+    visibility: visible;
+    opacity: 1;
 }
