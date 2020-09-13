@@ -98,7 +98,7 @@
 }
 
 .input:focus {
-    border-bottom: 1px solid #8623cc;
+    border-bottom: 1px solid #a41ec5;
     transition: 0.5s;
 }
 

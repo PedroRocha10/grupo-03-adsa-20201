@@ -146,13 +146,13 @@ a{
 }
 .conteudo .texto{
     font-family: 'Montserrat', sans-serif;
-    text-align: justify;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-right: 20px;
 }
 .conteudo .texto h1{
     color: #0086fa;
     font-size: 3em;
+    margin: 10px 0px 20px 0px;
 }
 .conteudo .btnExplorar{
     width: 550px;
@@ -173,6 +173,19 @@ a{
     transition: 0.5s;
     cursor: pointer; 
     transform: scale(0.9);
+}
+
+.moldeImg {
+    position: relative;
+    width: 100px;
+    height: 120px;
+    margin-left: 5%;
+}
+
+.logoImg img{
+    position: absolute;
+    z-index: 6;
+    width: 130px;
 }
 
 /* Redes sociais */
@@ -214,19 +227,7 @@ a{
     height: 533px;
     overflow: hidden;
 }
-.logoImg{
-    position: absolute;
-    z-index: 6;
-    top: 70px;
-    left: 80px;
-    width: 90%;
-    height: 90%;
-    background: url(../img/logo.png);
-    background-size: 75%;
-    background-repeat: no-repeat;
-    transition: 0.5s;
-    animation: logoGiro ease-in-out 2s infinite;
-}
+
 .bola{
     position: relative;
     z-index: 1;

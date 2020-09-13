@@ -16,7 +16,7 @@ body{
     position: relative;
     float: left;
     color: #fff;
-    background:url(../img/fundo.PNG);
+    background:url(../img/background-contact.PNG);
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
@@ -33,6 +33,7 @@ body{
     margin: 0;
     padding: 28% 0 0 7%;
     font-size: 8vh;
+    font-weight: lighter;
 }
 
 h4{
@@ -62,7 +63,7 @@ h4{
 }
 
 .inp-form:focus{
-    border-bottom: 1px solid #cc2323;
+    border-bottom: 1px solid #a41ec5;
     transition: .5s;
 }
 
