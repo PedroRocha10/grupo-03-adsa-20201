@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body onscroll="paginteira()">
 
     <!-- Header -->
 
@@ -160,7 +160,7 @@
             <div class="ideais">
                 <div class="cx-ideal">
                     <div class="fundoimagem">
-                        <img src="../site-institucional/img/musculos.png" alt="">
+                        <img id="missaofig" src="../site-institucional/img/musculos.png" alt="">
                     </div>
                     <p>
                     <h3>Missão</h3>
@@ -172,7 +172,7 @@
                 </div>
                 <div class="cx-ideal">
                     <div class="fundoimagem">
-                        <img src="../site-institucional/img/foguete.png" alt="">
+                        <img id="visaofig" src="../site-institucional/img/foguete.png" alt="">
                     </div>
                     <p>
                     <h3>Visão</h3>
@@ -182,7 +182,7 @@
                 </div>
                 <div class="cx-ideal">
                     <div class="fundoimagem">
-                        <img src="../site-institucional/img/qualidade.png" alt="">
+                        <img id="valorfig" src="../site-institucional/img/qualidade.png" alt="">
                     </div>
                     <p>
                     <h3>Valores</h3>
@@ -458,4 +458,26 @@
         }
         x[slideIndex - 1].style.display = "block";
     }
+
+      function paginteira(){
+          let pag = document.documentElement.scrollTop;
+          let figuraglobo = document.getElementById('globofig');
+          let figuraaguia = document.getElementById('aguiafig');
+          let figuramissao = document.getElementById('missaofig');
+          let figuravisao = document.getElementById('visaofig');
+          let figuravalor = document.getElementById('valorfig');
+        
+        if(pag > 100){
+            figuraglobo.classList.add('surgir');
+            figuraaguia.classList.add('surgir');
+        }
+
+
+        if(pag > 300){
+            figuramissao.classList.add('surgir');
+            figuravalor.classList.add('surgir');
+            figuravisao.classList.add('surgir');
+        }
+      }
+
 </script>
