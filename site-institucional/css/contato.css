@@ -16,15 +16,14 @@ body{
     position: relative;
     float: left;
     color: #fff;
-    background:url(../img/background-contact.PNG);
-    background-size: cover;
+    background:url(../img/background-contact\(1\).PNG);
     background-attachment: fixed;
     z-index: -1;
 }
 
 .mask{
     margin: 0;
-    background-color: #000000aa;
+    background-color: transparent;
     width: 100%;
     height: 70vh;
 }
@@ -34,6 +33,7 @@ body{
     padding: 28% 0 0 7%;
     font-size: 8vh;
     font-weight: lighter;
+    text-shadow: #000 3px 3px 3px;
 }
 
 h4{
@@ -63,7 +63,7 @@ h4{
 }
 
 .inp-form:focus{
-    border-bottom: 1px solid #a41ec5;
+    border-bottom: 1px solid #2445ea;
     transition: .5s;
 }
 
@@ -73,10 +73,11 @@ textarea{
     width: 76%;
     border-bottom: 1px solid #000;
     outline: none;
+    resize: none;
 }
 
 textarea:focus{
-    border-bottom: 1px solid #cc2323;
+    border-bottom: 1px solid #2445ea;
     transition: .5s;
 }
 
@@ -108,7 +109,7 @@ footer{
     width: 100%;
     position: relative;
     float: left;
-    background: #363636;
+    background: #2445ea;
     z-index: -2;
 }
 

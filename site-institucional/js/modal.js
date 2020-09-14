@@ -46,3 +46,44 @@ function galeria() {
         modal_gallery.classList.toggle('modal_active');
     });
 }
+
+// VER E ESCONDER A SENHA-----------------------------------------------
+
+function versenha() {
+    var mostrar = document.getElementById('login_senha');
+
+    if (mostrar.type == 'password') {
+        mostrar.type = 'text';
+        img_senha.src = 'img/senha.png';
+    }
+    else {
+        mostrar.type = 'password';
+        img_senha.src = 'img/ver_senha.png';
+    }
+}
+
+function versenha_cad() {
+    var mostrar = document.getElementById('valida_senha');
+
+    if (mostrar.type == 'password') {
+        mostrar.type = 'text';
+        img_senha.src = 'img/senha.png';
+    }
+    else {
+        mostrar.type = 'password';
+        img_senha.src = 'img/ver_senha.png';
+    }
+}
+
+function versenha_conf() {
+    var mostrar = document.getElementById('confirma_senha');
+
+    if (mostrar.type == 'password') {
+        mostrar.type = 'text';
+        img_senha.src = 'img/senha.png';
+    }
+    else {
+        mostrar.type = 'password';
+        img_senha.src = 'img/ver_senha.png';
+    }
+}

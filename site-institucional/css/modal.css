@@ -157,3 +157,17 @@
     animation-name: errorAnimation;
     animation-duration: 1s;
 }
+
+.senha{
+    margin: 5% 0 0 67%;
+    position: absolute;
+    float: right;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+button img{
+    width: 20px;
+    cursor: pointer;
+}

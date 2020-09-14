@@ -377,6 +377,10 @@
                 <input type="email" class="input" placeholder="E-mail" id="login_email">
                 <div class="border-input"></div>
 
+                <button type="button" onclick="versenha()" class="senha">
+                    <img src="img/ver_senha.png" alt="" id="img_senha">
+                </button>
+
                 <input type="password" class="input" placeholder="Senha" id="login_senha">
                 <div class="border-input"></div>
 
@@ -408,9 +412,17 @@
                     onkeyup="validacao_email()">
                 <div id="mensagem_email" class="msg-input"></div>
 
+                <button type="button" onclick="versenha_cad()" class="senha">
+                    <img src="img/ver_senha.png" alt="" id="img_senha">
+                </button>
+
                 <input type="password" class="input" placeholder="Crie uma senha" id="valida_senha"
                     onkeyup="validacao_senha()">
                 <div id="mensagem_senha" class="msg-input"></div>
+
+                <button type="button" onclick="versenha_conf()" class="senha">
+                    <img src="img/ver_senha.png" alt="" id="img_senha">
+                </button>
 
                 <input type="password" class="input" placeholder="Confirmar senha" id="confirma_senha">
                 <div id="mensagem_senha2" class="msg-input"></div>
